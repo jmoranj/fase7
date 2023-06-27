@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: "Roboto", "Segoe UI", sans-serif;
+    font-size: 14pt;
+    color: white;
+}
+
+body{
+    align-items: center;
+    background: #111;
+    margin: 0 auto;
+    width: 720px;
+}
+
+
+form {
+    background: #111;
+    border: 1px solid #111;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgb(250, 249, 249);
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    margin: 250px 20px;
+    padding: 32px;
+    width: 550px;
+    height: 400px;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="date"],
+input[type="checkbox"],
+input[type="password"],
+input[type="email"] {
+    background: #111;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    outline: none;
+    padding: 4px 16px;
+}
+
+
+input[type="submit"] {
+    border: 2px;
+    background: #111;
+    border-color: white;
+    border-radius: 8px;
+    border-style: solid;
+    color: white;
+    margin: 0 auto;
+    padding: 8px 32px;
+}
+
+div.post{
+    box-shadow:0 0 16px rgba(255,255, 255, 255);
+    border-radius: 6px;
+    margin: 32px 32px;
+    transition: 0.4s;
+}
+
+div.post:hover{
+    transform: scale(101%) rotateZ(0.5deg);
+    transition: 0.4s;
+}
+
+div.post-username{
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 16px;
+    text-transform: uppercase;
+    text-align: left;
+}
+div.post-description {
+    font-size: 12pt;
+    text-align: justify;
+    padding: 16px;
+}
+
+div.post img {
+    width: 100%;
+    max-height: 450px;
+}
+
+div.date-post {
+    color: #555;
+    font-size: 12pt;
+    padding: 12px;
+    text-align: center;
+}
+
+a.piru {
+    color: inherit;
+    font-size: 25pt;
+    text-decoration: wavy;
+}
+
+div.zoio {
+    justify-content: center; gap: 16px;
+    margin: 32px 0;
+    padding: 32px;
+    width: 550px;
+    height: 400px;
+}
+
+div.zoio img {
+    width: 100%;
+    max-height: 450px;
+}
+
+div.prank {
+    text-align: left;
+}
+
+div.error404 {
+    font-style: italic;
+    padding: 160px;
+    text-align: center;
+}
+
+button{
+    background-color: #111;
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0px 280px;
+    padding: 10px;
+    padding-left: 1000px;
+    width: 150px;
+    height: 55px;
+}

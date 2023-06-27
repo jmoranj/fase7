@@ -1,0 +1,20 @@
+html 
+    head
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title MemoryBook | Post
+        link(rel="stylesheet", href="/style.css")
+        link(rel="shortcut icon", href="/favicon.png", type="image/png")
+    body
+
+        if Object.keys(result || {}).length > 0
+            - var option = { year: "numeric", month: "long", day: "numeric", weekday: "long" }
+            - var date = new Date(result.date_post).toLocaleString("pt-BR", option)
+            div(class="post")
+                div(class="post-username") #{ result.username }
+                div(class="post-description") #{ result.description }
+                img(src=result.content, alt="content photo")
+                div(class="date-post") #{ date }
+        else 
+            div(class="post")
+                div(class="post-username") Post not found!
